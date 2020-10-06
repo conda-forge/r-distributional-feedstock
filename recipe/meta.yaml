@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/distributional_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/distributional/distributional_{{ version }}.tar.gz
-  sha256: 94c8c761f9afa5e83ed950dba73b4f6299b933d876ade94ddddf7377581529d0
+  sha256: 1d437cb55d242e18677d692270a0aa39ff88d6b8e23bd01353004d2bb28fb15b
 
 build:
   merge_build_host: true  # [win]
