@@ -5,11 +5,9 @@ Home: https://pkg.mitchelloharawild.com/distributional/, https://github.com/mitc
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-distributional-feedstock/blob/master/LICENSE.txt)
 
 Summary: Vectorised distribution objects with tools for manipulating, visualising, and using probability distributions. Designed to allow model prediction outputs to return distributions rather than their parameters, allowing users to directly interact with predictive distributions in a data-oriented workflow. In addition to providing generic replacements for p/d/q/r functions, other useful statistics can be computed including means, variances, intervals, and highest density regions.
-
-
 
 Current build status
 ====================
