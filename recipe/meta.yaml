@@ -30,6 +30,7 @@ requirements:
     - r-ggplot2
     - r-lifecycle
     - r-numderiv
+    - r-pillar
     - r-rlang >=0.4.5
     - r-scales
     - r-vctrs >=0.3.0
@@ -42,6 +43,7 @@ requirements:
     - r-ggplot2
     - r-lifecycle
     - r-numderiv
+    - r-pillar
     - r-rlang >=0.4.5
     - r-scales
     - r-vctrs >=0.3.0
