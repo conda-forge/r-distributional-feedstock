@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/distributional_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/distributional/distributional_{{ version }}.tar.gz
-  sha256: cf8c3802e2ec8422f075b505b48aa8da80ddb8f1ad5049c5704f84f38f8d419a
+  sha256: 15f10bc388de532ba93a53af5048a4ecad9cde8d429e07299be70e05db7895a7
 
 build:
   number: 0
@@ -56,8 +56,8 @@ test:
 about:
   home: https://pkg.mitchelloharawild.com/distributional/, https://github.com/mitchelloharawild/distributional
   license: GPL-3.0-only
-  summary: Vectorised distribution objects with tools for manipulating, visualising, and using probability distributions. Designed to allow model prediction outputs to return distributions rather than their parameters, allowing users to directly interact with predictive distributions in a data-oriented workflow. In addition
-    to providing generic replacements for p/d/q/r functions, other useful statistics can be computed including means, variances, intervals, and highest density regions.
+  summary: Vectorised distribution objects with tools for manipulating, visualising, and using probability distributions. Designed to allow model prediction outputs to return distributions rather than their parameters, allowing users to directly interact with predictive distributions in a data-oriented workflow. In 
+    addition to providing generic replacements for p/d/q/r functions, other useful statistics can be computed including means, variances, intervals, and highest density regions.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
