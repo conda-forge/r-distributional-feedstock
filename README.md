@@ -3,21 +3,22 @@ About r-distributional-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-distributional-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pkg.mitchelloharawild.com/distributional/, https://github.com/mitchelloharawild/distributional
+Home: https://pkg.mitchelloharawild.com/distributional/
 
 Package license: GPL-3.0-only
 
 Summary: Vectorised distribution objects with tools for manipulating, visualising, and using probability distributions. Designed to allow model prediction outputs to return distributions rather than their parameters, allowing users to directly interact with predictive distributions in a data-oriented workflow. In addition to providing generic replacements for p/d/q/r functions, other useful statistics can be computed including means, variances, intervals, and highest density regions.
 
+Development: https://github.com/mitchelloharawild/distributional
+
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10043&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-distributional-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
