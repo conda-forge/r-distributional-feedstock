@@ -17,35 +17,30 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-digest
-    - r-ellipsis
-    - r-farver
     - r-generics
-    - r-ggplot2
     - r-lifecycle
     - r-numderiv
     - r-pillar
     - r-rlang >=0.4.5
-    - r-scales
     - r-vctrs >=0.3.0
   run:
     - r-base
-    - r-digest
-    - r-ellipsis
-    - r-farver
     - r-generics
-    - r-ggplot2
     - r-lifecycle
     - r-numderiv
     - r-pillar
     - r-rlang >=0.4.5
-    - r-scales
     - r-vctrs >=0.3.0
 
 test:
@@ -54,7 +49,8 @@ test:
     - "\"%R%\" -e \"library('distributional')\""  # [win]
 
 about:
-  home: https://pkg.mitchelloharawild.com/distributional/, https://github.com/mitchelloharawild/distributional
+  home: https://pkg.mitchelloharawild.com/distributional/
+  dev_url: https://github.com/mitchelloharawild/distributional
   license: GPL-3.0-only
   summary: Vectorised distribution objects with tools for manipulating, visualising, and using probability distributions. Designed to allow model prediction outputs to return distributions rather than their parameters, allowing users to directly interact with predictive distributions in a data-oriented workflow. In 
     addition to providing generic replacements for p/d/q/r functions, other useful statistics can be computed including means, variances, intervals, and highest density regions.
