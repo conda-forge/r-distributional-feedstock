@@ -1,4 +1,4 @@
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/distributional_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/distributional/distributional_{{ version }}.tar.gz
-  sha256: 1da0616b02a24a05dd49b19577c944fb3e48e1d2eae07efd56c03e45ba1a519e
+  sha256: 8eb20c223f0504838190000e208a2a761733926db4308d71507dad9b8cf6fe2d
 
 build:
   number: 0
